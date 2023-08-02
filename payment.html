@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment form</title>
+</head>
+<body>
+    <div class="outside">
+        <div class="container">
+            <form action="">
+                
+                    <h1 class="main_heading">Payment form     <img src="https://w7.pngwing.com/pngs/117/675/png-transparent-visa-and-mastercard-ads-mastercard-credit-card-american-express-visa-debit-card-mastercard-text-payment-logo.png" width=60px></h1>
+                
+
+                
+                <hr>
+                <p>Required fields are followed by *</p>
+                <h2>Contact Information</h2>
+                <p>Name : * <input type="text" name="name" required placeholder="Enter your name"></p>
+
+                <fieldset>
+                    <legend>Gender *</legend>
+                    <p>
+                        Male <i class="fa-solid fa-person"></i><input style="accent-color: rgb(4, 153, 246);" type="radio" name="gender" id="male" required>
+                        Female <i class="fa-solid fa-person-dress"></i><input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>
+                <p>
+                    Address:<textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your Address"></textarea>
+                </p>
+                <p>
+                    Email: *<input type="email" name="email" id="email" required placeholder="abcd@gmail.com">
+                </p>
+                <p>
+                    Pincode: *<input type="number" name="pincode" id="pincode" required placeholder="123456">
+                </p>
+                <hr>
+                <h2>Payment Information</h2>
+                <p>
+                    Card type:
+                    <select name="card_type" id="card_type" required>
+                        <option value="">__Select a card Type--</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                </p>
+                <p>
+                    Card Number<input type="input" name="card_number" id="card_number" required placeholder="1111-2222-3333-4444">
+                </p>
+                <p>
+                    Expiration Date:<input type="date" name="exp_date" id="exp_date">
+                </p>
+                <p>CVV<input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+                <p><input type="submit" value="Pay Now"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
